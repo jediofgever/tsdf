@@ -20,7 +20,7 @@ message(STATUS "Use Cmake ${CMAKE_VERSION}")
 include_directories(${OpenCV_INCLUDE_DIRS}
                     ${CUDA_INCLUDE_DIRS})
 
-CUDA_ADD_EXECUTABLE(diana ${cpu_source_files} ${gpu_source_files})
+CUDA_ADD_EXECUTABLE(diana ${gpu_source_files})
 target_link_libraries(diana ${OpenCV_LIBRARIES} ${CUDA_LIBRARIES})
 
  

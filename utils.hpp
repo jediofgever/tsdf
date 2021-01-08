@@ -246,3 +246,4 @@ void checkCUDA(const int lineNumber, cudaError_t status) {
     FatalError();
   }
 }
+

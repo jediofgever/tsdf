@@ -9,6 +9,7 @@
 #include <string>
 #include "utils.hpp"
 
+
 // CUDA kernel function to integrate a TSDF voxel volume given depth images
 __global__
 void Integrate(float * cam_K, float * cam2base, float * depth_im,
