@@ -66,12 +66,12 @@ void Integrate(float * cam_K, float * cam2base, float * depth_im,
 // Loads a binary file with depth data and generates a TSDF voxel volume (5m x 5m x 5m at 1cm resolution)
 // Volume is aligned with respect to the camera coordinates of the first frame (a.k.a. base frame)
 int main(int argc, char * argv[]) {
-
+  std::cout << "started the program ... " << std::endl;
   // Location of camera intrinsic file
-  std::string cam_K_file = "data/camera-intrinsics.txt";
+  std::string cam_K_file = "/home/ros2-foxy/tsdf-fusion/data/camera-intrinsics.txt";
 
   // Location of folder containing RGB-D frames and camera pose files
-  std::string data_path = "data/rgbd-frames";
+  std::string data_path = "/home/ros2-foxy/tsdf-fusion/data/rgbd-frames";
   int base_frame_idx = 150;
   int first_frame_idx = 150;
   float num_frames = 50;
